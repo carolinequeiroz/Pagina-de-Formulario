@@ -19,15 +19,36 @@
         width="90"
         height=""
         >
-        <h1>Home</h1>
-
+        <h1>Criar seu cadastro</h1>
+        <h2>Veja seus pedidos de forma fácil, compre mais rápido e tenha uma experiência personalizada.</h2>
+        <p><span>*</span>Campos Obrigatórios</p>
         <a href="login.html">Entrar</a>
 <form>
     
     <br></br>
-    <label>Nome Completo*</label>
+    <label><span>*</span>Nome Completo:</label>
     <input placeholder="Insira seu nome completo" type="text" none="nome" id="">
     <br></br>
+    <label><span>*</span>Gênero:</label><br></br>
+    <span>Precisamos te conhecer melhor.</span><br></br>
+    <input type="radio"  name="opcao">Feminino
+    <input type="radio"  name="opcao">Masculino
+    <input type="radio"  name="opcao">Não informar
+    <br></br>
+    <label>Data de Nascimento:</label><br></br>
+    <span>Necessário pra identificar a maioridade, no formato  DD/MM/AAAA.</span><br></br>
+    <input data-cy="formField__birthDate" type="tel" required="" mask="99/99/9999" maxlength="10" autocorrect="off" name="birthDate"
+    placeholder="__/__/____" class="inputcomponent__InputFieldInput-sc-x88sc3-3 cXOnMx" value="">
+    <br></br>
+    <label>CPF:</label><br></br>
+    <a>Necessário para emissão de notas fiscais.</a><br></br>
+    <div cursor="text" type="tel" id="input-border" class="inputcomponent__InputWrapper-sc-x88sc3-2 bexBUM"><input data-cy="formField__cpf" type="tel" required="" mask="999.999.999-99" maxlength="14" autocorrect="off" name="cpf" placeholder="___.___.___-__" 
+    class="inputcomponent__InputFieldInput-sc-x88sc3-3 cXOnMx" value=""><figure class="sc-gIBoTZ fsnUMh"></figure></div>
+    <label>Numero de telefone</label><br></br>
+    <div cursor="text" type="tel" id="input-border" class="inputcomponent__InputWrapper-sc-x88sc3-2 bexBUM"><input data-cy="formField__phone" type="tel" required="" maxlength="14" mask="(99) 99999-9999" autocorrect="off" name="phone" placeholder="(__) _____-____" class="inputcomponent__InputFieldInput-sc-x88sc3-3 cXOnMx" value="">
+    <figure class="sc-gIBoTZ fsnUMh"></figure></div>
+    <!--terminar formulario--> 
+
 </form>
         <a href="politicas.html">Politicas de Privacidade</a>
         <!--completar o formulario colocar texto no começo-->
